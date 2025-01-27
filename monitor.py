@@ -99,4 +99,4 @@ bat_files_mapping = {
 
 while True:
     monitor_py_files(bat_files_mapping)
-    time.sleep(600)  # Verifica a cada 10 minutos
+    time.sleep(300)  # Verifica a cada 5 minutos
