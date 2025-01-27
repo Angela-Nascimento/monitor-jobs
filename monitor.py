@@ -64,7 +64,7 @@ def print_dynamic_status(bat_files, statuses):
 
     for frame in status_art:
         os.system('cls' if os.name == 'nt' else 'clear')  # Limpa a tela
-        print(Fore.YELLOW + "=== MONITORANDO JOBS ===\n")
+        print(Fore.YELLOW + "=== MONITORANDO BAT's ===\n")
         for bat_file, status in zip(bat_files, statuses):
             color = Fore.GREEN if status == "EM EXECUÇÃO" else (Fore.YELLOW if status == "REABERTO" else Fore.RED)
             print(color + f"{frame} {os.path.basename(bat_file)}: {status}")
